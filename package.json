@@ -1,0 +1,27 @@
+{
+    "name": "jquery.dys",
+    "version": "1.0.0",
+    "description": "Yet another full-fledged jQuery spinnable searchable select replacement plugin with bare minimum code.",
+    "main": "./dist/jquery.dys.min.js",
+    "ecosystem": "jquery",
+    "scripts": {
+      "test": "jest"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/effone/jquery.dys.git"
+    },
+    "keywords": [
+      "jquery-plugin",
+      "select",
+      "bare",
+      "small",
+      "tiny"
+    ],
+    "author": "effone",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/effone/jquery.dys/issues"
+    },
+    "homepage": "https://github.com/effone/jquery.dys#readme"
+  }

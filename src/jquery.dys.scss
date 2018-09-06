@@ -1,0 +1,89 @@
+$main_color: #0044FF;
+$background_color: #FFFFFF;
+$light_border_color: #EEEEEE;
+$light_hover_color: #F8F8F8;
+
+.dys {
+    background: $background_color;
+    margin: 5px 2px;
+    border: 1px solid $light_border_color;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+    &.pop {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .nav {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        cursor: pointer;
+        padding: 2px 5px;
+        line-height: 26px;
+    }
+    .vis {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        cursor: pointer;
+        padding: 2px 5px;
+        line-height: 26px;
+        overflow: hidden;
+        min-height: 32px;
+        margin-bottom: -9px;
+        min-width: 100px;
+    }
+    .fltr {
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 0 5px;
+        border: none;
+        outline: none;
+        margin-top: -2px;
+        background: $light_hover_color;
+    }
+    .nav {
+        width: 30px;
+        border-right: none;
+        border-left: 1px solid $light_border_color;
+        font-size: 24px;
+        &:first-child {
+            border-left: none;
+            border-right: 1px solid $light_border_color;
+        }
+    }
+    .en,
+    .fltr {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+    }
+    .vis>.sel {
+        left: 0 !important;
+        -webkit-transition: all .3s ease-in-out;
+        transition: width all .3s ease-in-out;
+    }
+    .pop {
+        background: $background_color;
+        box-sizing: border-box;
+        max-height: 140px;
+        padding: 5px;
+        border: 1px solid $light_border_color;
+        position: absolute;
+        overflow-x: auto;
+        margin-left: -1px;
+        border-radius: 0 0 3px 3px;
+    }
+    >.pop .sr {
+        text-align: left;
+        padding: 7px;
+        border-bottom: 1px solid $light_border_color;
+        cursor: pointer;
+    }
+    .nav:hover,
+    .sr:hover {
+        color: $main_color;
+        background: $light_hover_color;
+    }
+}
