@@ -1,19 +1,38 @@
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+body {
+    background: #9000ff;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 70%;
+    margin: 0 auto;
+    background: #FFF;
+    padding: 20px;
+}
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
     opacity: 0.3;
 }
 
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */   
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
     opacity: 0.3;
 }
 
-::-moz-placeholder { /* Mozilla Firefox 19+ */   
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
     opacity: 0.3;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */   
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     opacity: 0.3;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */   
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     opacity: 0.3;
 }

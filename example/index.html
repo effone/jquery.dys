@@ -5,19 +5,33 @@
     <meta charset="utf-8">
     <title>jquery.dys</title>
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
-    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Maitree:400,700">
     <link type="text/css" rel="stylesheet" href="base.css" />
-    <link type="text/css" rel="stylesheet" href="../dist/jquery.dys.min.css" />
+    <link type="text/css" rel="stylesheet" href="../src/jquery.dys.css" />
 </head>
 
 <body>
     <div id="container">
         <h2>jquery.dys</h2>
+        <form>Example: 
+            <select id="dyc_example_1" class='dys'>
+                <option value="1">One</option>
+                <option value="2" selected="selected">Two</option>
+                <option value="3">Three</option>
+                <option value="4">Four</option>
+            </select>
+            <select id="dyc_example_2" class='dys'>
+                <option value="css">Cascading Stylesheet</option>
+                <option value="html" selected="selected">Hyper Text Markup Language</option>
+                <option value="js">Javascript</option>
+                <option value="sass">Syntactically Awesome Stylesheet</option>
+                <option value="ror">Ruby on Rails</option>
+            </select>
+        </form>
         <!-- copyright notice.-->
         <p>&#169; <a href="https://github.com/effone">effone</a>, 2018</p>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="../dist/jquery.dys.min.js"></script>
+    <script type="text/javascript" src="../src/jquery.dys.js"></script>
     <script type="text/javascript" src="base.js"></script>
 </body>
 

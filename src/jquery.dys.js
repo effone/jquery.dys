@@ -5,10 +5,9 @@
             var cid = 'dys_' + main.index();
             main.after('<div id=\'' + cid + '\' class=\'dys\'><div class="nav left">&#x1F890;</div><div class="vis"><input type=\'text\' class=\'fltr\' autocomplete=\'off\' /></div><div class="nav right">&#x1F892;</div><div class=\'pop\'></div></div>').hide();
             var dupe = $('#' + cid);
-            var vis = dupe.find('.vis');
-            var pop = dupe.find('.pop');
+            var vis = dupe.find('.vis').outerWidth(main.outerWidth());
+            var pop = dupe.find('.pop').outerWidth(dupe.outerWidth()).hide();
             dupe.find('.fltr').outerWidth(vis.outerWidth()).outerHeight(vis.outerHeight() - 2);
-            pop.outerWidth(dupe.outerWidth()).hide();
             main.find('option').each(function () {
                 var cls = 'en-' + ($(this).index() + 1);
                 if ($.trim($(this).text()) == $.trim(main.children("option").filter(":selected").text())) { cls = cls + ' sel'; }
